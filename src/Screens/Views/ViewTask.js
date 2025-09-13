@@ -15,12 +15,9 @@ const ViewTask = ({ route, navigation }) => {
   };
 
   const getInitials = () => {
-  if (profile.taskName && profile.taskName.length > 0) {
-    return profile.taskName[0].toUpperCase();
-  } else {
-    return "T";
-  }
-};
+        return `${profile.taskName}`.toUpperCase();
+    }
+
   return (
     <ScrollView>
       <View style={styles.profileHeader}>
