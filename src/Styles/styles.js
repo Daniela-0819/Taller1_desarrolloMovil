@@ -53,6 +53,21 @@ const styles = StyleSheet.create({
     marginVertical: 5,
     color: "#444",
   },
+  taskContainer: {
+    backgroundColor: "#e0e0e0",
+    padding: 15,
+    marginBottom: 10,
+    borderRadius: 8,
+  },
+  taskName: {
+    fontSize: 18,
+    fontWeight: "bold",
+    color: "#333",
+  },
+  taskDate: {
+    fontSize: 14,
+    color: "gray",
+  },
 });
 
 export default styles;

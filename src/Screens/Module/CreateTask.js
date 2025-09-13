@@ -25,8 +25,9 @@ const CreateTask = ({ navigation }) => {
       return;
     }
 
-    const profileTask = { taskName, descripitionTask, subject, date };
-    navigation.navigate('ViewTask', { profile: profileTask });
+  const profileTask = { taskName, descripitionTask, subject, date };
+  navigation.navigate('ViewTask', { profile: profileTask });
+
   };
 
   return (
@@ -74,6 +75,12 @@ const CreateTask = ({ navigation }) => {
               title="Guardar tarea"
               onPress={handleSave}
               disabled={!formValid}
+            />
+
+            <Button
+              title="Ver lista de tareas"
+              onPress={() => navigation.navigate("TaskList")}
+              color="green"
             />
 
             <View style={styles.infoContainer}>

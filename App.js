@@ -30,6 +30,12 @@ export default function App () {
               component={EditTask} 
               options={{title: 'Editar Tarea'}}
             />
+            <Stack.Screen
+              name="TaskList"
+              component={TaskList}
+              options={{title: 'Lista de Tareas'}}
+            />
+
           </Stack.Navigator>
         </NavigationContainer>
       </PaperProvider>
